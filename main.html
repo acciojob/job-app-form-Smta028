@@ -8,30 +8,35 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
-	<input type = "text" placeholder="Name">
-	<br>
-	<input type ="Email" placeholder="Email">
-	<br>
+	<form method="post">
+		<label for="portfolio">portfolio</label>
+		<input type="url" name="portfolio" id="portfolio">
+		<label for ="name">Name</label>
+	<input type = "text" required id="name">
+		
+		<label for "email">Email</label>
+	<input type ="email" required id="Email">
+	
 
-		<input type = "radio" name ="Gender" value="Female">Female
+		<input type = "radio" name ="Gender" required id="gender">Female
 	<br>
-	<input type ="radio" name ="Gender" value = "Male">Male
+	<input type ="radio" name ="Gender" required id = "Gender">Male
 		<br>
-		<label for="Laptop Brands">Laptop Brands:</label>
- <select id="Laptop Brands">
+		<label for="Laptop">Laptop Brands:</label>
+ <select id="Laptop">
 	< option value="Apple">Apple</option>
 	 < option value="Asus">Asus</option>
 	 < option value="HP">HP</option>
  </select>
-	<br>
-		<input type ="number" placeholder="Age">
-			<br>
-		<input type="date" placeholder="DOB">
-			<br>
-		<input type="password" placeholder="Password">
-		<br>
-		<button>submit</button>
+		
+ <label for="age">age</label>
+		<input type ="age" required id="Age">
+			<label for="dob">DOB</label>
+		<input type="date" required id="DOB">
+			<label for="password">Password</label>
+		<input type="password" required id="Password">
+	<label for="submit">submit</label>
+		<button type="submit">Submit</button>
 
 		</form>
     <script type="text/javascript" src="./script.js">
